@@ -9,7 +9,7 @@ This repository provides implementations of various numerical methods commonly u
 - Newton's Divided Difference Interpolation
 
 
-<b>Roots of Equations:</b>
+<b>Roots of Equations:</b> [Link](https://github.com/pakbungdesu/numerical-method/tree/7c48df14ffa3627665e951f4d3a0c32d1c45df79/roots_equations)
 - Bisection Method
 - Newton-Raphson Method
 - Secant Method
