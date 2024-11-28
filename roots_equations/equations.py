@@ -7,14 +7,15 @@ def build_expression():
     while more == 'y':
         coef = int(input("Enter coefficient: "))
         expo = int(input("Enter exponent: "))
-        print("1 - x variable\n2 - sin and cos \n3 - euler's number")
-        types = int(input("Select type of this expression. Enter 1-3: "))
+        print("1 - x variable\n2 - sin\n3 - cos\n4 - euler's number")
+        choice = int(input("Select type of this expression. Enter 1-4: "))
 
-        if types == 1:
+        if choice == 1:
             res['x'].append((coef, expo))
-        elif types == 2:
-            trigo_input = str(input("Type 'sin' or 'cos': "))
-            res[trigo_input].append((coef, expo))
+        elif choice == 2:
+            res['sin'].append((coef, expo))
+        elif choice == 3:
+            res['cos'].append((coef, expo))
         else:
             res['exp'].append((coef, expo))
 
