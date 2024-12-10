@@ -1,21 +1,21 @@
 
-import equations as eq
+from expression import *
 import csv
 
 
 def bisection(lower, upper, err, max_repeat):
     all_data = []
     print("Equation's input")
-    my_dict = eq.build_expression()
-    if eq.expression(my_dict, lower) * eq.expression(my_dict, upper) >= 0:
+    expr = build_expression()
+    if expr.evaluate(lower) * expr.evaluate(upper) >= 0:
         print("You have not assumed right a and b")
         return all_data
 
     i = 0
     while i < max_repeat and abs(lower - upper) >= err:
-        fa = eq.expression(my_dict, lower)
+        fa = expr.evaluate(lower)
         middle = (lower + upper) / 2
-        fm = eq.expression(my_dict, middle)
+        fm = expr.evaluate(middle)
 
         this_row = [i + 1, lower, upper, middle, fa, fm]
         all_data.append(this_row)
@@ -27,7 +27,6 @@ def bisection(lower, upper, err, max_repeat):
         else:
             break
         i += 1
-
     return all_data
 
 

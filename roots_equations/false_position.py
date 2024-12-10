@@ -1,13 +1,13 @@
 
+from expression import *
 import csv
-import equations as eq
 
 def falsepos(lower, upper, error_tol, max_iters):
 
     all_data = []
     print("Equation's input")
-    my_dict = eq.build_expression()
-    if eq.expression(my_dict, lower) * eq.expression(my_dict, upper) >= 0:
+    expr = build_expression()
+    if expr.evaluate(lower) * expr.evaluate(upper) >= 0:
         print("You have not assumed right a and b")
         return all_data
 
@@ -15,10 +15,10 @@ def falsepos(lower, upper, error_tol, max_iters):
     prev_c = None
     while i < max_iters:
 
-        fa = eq.expression(my_dict, lower)
-        fb = eq.expression(my_dict, upper)
+        fa = expr.evaluate(lower)
+        fb = expr.evaluate(upper)
         c = ((upper * fa - lower * fb) / (fa - fb))
-        fc = eq.expression(my_dict, c)
+        fc = expr.evaluate(c)
 
         this_row = [i+1, lower, upper, fa, fb, c, fc]
         all_data.append(this_row)

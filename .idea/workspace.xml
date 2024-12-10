@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="364e6bb5-e058-4f96-b6aa-45062b0f2c39" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/roots_equations/expression.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/csv-editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/roots_equations/bisection.py" beforeDir="false" afterPath="$PROJECT_DIR$/roots_equations/bisection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roots_equations/equations.py" beforeDir="false" afterPath="$PROJECT_DIR$/roots_equations/equations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roots_equations/equations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roots_equations/false_position.py" beforeDir="false" afterPath="$PROJECT_DIR$/roots_equations/false_position.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +40,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.bisection.executor": "Run",
     "Python.equations.executor": "Run",
     "Python.false_position.executor": "Run",
@@ -46,6 +48,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/User/source/repos/numerical-method",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
